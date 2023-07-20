@@ -1,0 +1,10 @@
+*{
+  user-select: none;
+}
+.activity{
+  background:pink;
+  width:250px;
+  cursor:pointer;
+
+}
+

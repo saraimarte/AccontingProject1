@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+import  '../styles/drag.css';
+import '../dist/dragula.min.css';
+import Column1 from '../Layouts/Column1.astro';
+import Column2 from '../Layouts/Column2.astro';
+import Column3 from '../Layouts/Column3.astro';
+import FlexLayout from '../Layouts/FlexLayout.astro';
+import {activities, answers} from '../scripts/shuffle.js';  
+import DragParent from '../components/DragParent.astro';
+const activitiesCount = 2;
+
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Astro</title>
+
+
+	</head>
+	<body>
+		<FlexLayout>
+			<Column1 > 
+				<DragParent>	
+					{activities.slice(0,activitiesCount).map((activity,index) => ( <div class = {`activity ${answers[index]}`}> {activity} </div>))}
+				</DragParent>
+			</Column1>
+			<Column2 />
+			<Column3>
+			</Column3>
+	  </FlexLayout>
+	  <script src = '../scripts/drag.js'> </script>
+	  <script src = '../dist/dragula.min.js'></script> 
+	  <script src = "../scripts/grade.js"> </script>
+
+	</body>
+	
+</html>

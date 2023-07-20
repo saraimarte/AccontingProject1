@@ -1,0 +1,62 @@
+---
+const borderRadius = '20px';
+---
+
+<div class = "column2">
+    <div class = "boxcontainers">
+        <div id = "TransactionTitle" class = "title"> 
+            Transaction
+        </div>
+        <div id = "box1" class = "box"> </div>
+    </div>
+
+    <div class = "boxcontainers">
+        <div id = "NotATransactionTitle" class = "title"> 
+            Not a Transaction
+        </div>
+        <div id = "box2" class = "box"> </div>
+    </div>
+
+</div>
+
+
+<style define:vars = {{borderRadius}}>
+    .column2{
+        border:5px solid black;
+        width:50%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        gap:1em;
+        border-radius:var(--borderRadius);
+    }
+
+    .boxcontainers{
+        border:5px solid green;
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        /*overflow:hidden;*/
+
+    }
+
+    .title{
+        width:100%;
+        border:5px solid black;
+        border-radius:var(--borderRadius);
+        text-align:center;
+        font-size:20px;
+    }
+
+    .box{
+        border:5px solid red;
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:1em;
+    }
+</style>

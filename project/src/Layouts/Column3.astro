@@ -1,0 +1,58 @@
+---
+import Button from '../components/Button.astro';
+
+---
+
+<div class = "col3">
+    <div id = "displayWhenGraded" class = "displayWhenGraded"> 
+        <div class = "countContainer"> 
+            <div id = "rightCount" class = "count"> </div>
+            <h1> Right Answers </h1>
+        </div>
+        <div class = "countContainer"> 
+            <div id = "wrongCount" class = "count">  </div>
+            <h1> Wrong Answers </h1>
+        </div>
+    </div>
+    <Button></Button>
+</div>
+
+<style>
+    .col3{
+        border:2px solid black;
+        width:20%;
+        height:100%;
+        border-radius: 20px;
+        display:flex;
+        gap:1em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .displayWhenGraded{
+        border:5px solid black;
+        display: none;
+        flex-direction: column;
+        gap:1em;
+    }
+
+    .countContainer{
+        border:5px solid orange;
+        display:flex;
+        flex-direction: column;
+        height:100%;
+        
+    }
+    .count{
+        border:5px solid red;
+        text-align:center;
+        height:50%;
+    }
+
+    h1{
+        border:5px solid purple;
+        height:50%;
+
+    }
+
+</style>
