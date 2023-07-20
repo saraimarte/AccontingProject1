@@ -9,18 +9,30 @@
 
 
 <style>
-.section1{
-        border:2px solid black;
+    h1{
+       /* border:5px solid black;*/
+       position: relative;
+       top:0.5em;
+    }
+    .section1{
+        /*border:2px solid black;*/
         display:flex;
         flex-direction: column;
-        gap:1em;
         justify-content: center;
         align-items: center;
         width:min-content;
         border-radius: 20px;
         height:100%;
-        min-width:200px;
+        /*min-width:200px;*/
+        background-color: white;
 
     }
+    @media only screen and (max-width: 1000px) {
+    .section1 {
+      width:100%;
+      height:min-content;
+
+    }
+  }
 
 </style>

@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import  '../styles/drag.css';
 import '../dist/dragula.min.css';
 import Column1 from '../Layouts/Column1.astro';
 import Column2 from '../Layouts/Column2.astro';
@@ -8,7 +7,7 @@ import Column3 from '../Layouts/Column3.astro';
 import FlexLayout from '../Layouts/FlexLayout.astro';
 import {activities, answers} from '../scripts/shuffle.js';  
 import DragParent from '../components/DragParent.astro';
-const activitiesCount = 2;
+const activitiesCount = 10;
 
 
 ---
@@ -18,7 +17,8 @@ const activitiesCount = 2;
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> Astro</title>
-
+		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Roboto+Mono&display=swap"
+		rel="stylesheet">
 
 	</head>
 	<body>
